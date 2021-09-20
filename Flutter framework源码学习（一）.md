@@ -68,7 +68,7 @@ BindingBase() {
 * mixin本质是一个没有构造函数的类。不能直接实例化，专门用来代码复用，实现多继承的机制，但是没有c++多继承那么复杂。
 * dart run test_main.dart 可直接运行dart源码，这很方便写测试代码
 
-把上面5点都理解了，就理解了mixin的本质。我为了理解BindingXXX的启动流程，自己写了个类似的测试代码：test_main.dart。这个代码我留在最后吧。
+把上面5点都理解了，就理解了mixin的本质。我为了理解BindingXXX的启动流程，自己写了个类似的测试代码：[test_mixin](https://github.com/szuwest/code_lib/blob/main/test_mixin.dart)
 
 ### initInstances方法调用链
 **initInstances方法调用链: WidgetsBinding—>RendererBinding—>SemanticsBinding—>PaintingBinding—>ServicesBinding—>SchedulerBinding—>GestureBinding—>BindingBase**
